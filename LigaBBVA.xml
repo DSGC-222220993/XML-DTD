@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LigaBBVA [
+        <!ELEMENT LigaBBVA (Fecha|Partido)*>
+        <!ELEMENT Fecha (#PCDATA)>
+        <!ELEMENT Partido (EquiposEnfrentados|Marcador|Anotaciones)*>
+        <!ELEMENT EquiposEnfrentados (Local|Visitante)*>
+        <!ELEMENT Local (#PCDATA)>
+        <!ELEMENT Visitante (#PCDATA)>
+        <!ELEMENT Marcador (#PCDATA)>
+        <!ELEMENT Anotaciones (GolJugador)*>
+        <!ELEMENT GolJugador (Nombre|Minuto)*>
+        <!ELEMENT Nombre (#PCDATA)>
+        <!ELEMENT Minuto (#PCDATA)>
+        ]>
+<LigaBBVA>
+    <Fecha>2023-03-21</Fecha>
+    <Partido>
+        <EquiposEnfrentados>
+            <Local>Dundee</Local>
+            <Visitante>Ayr United</Visitante>
+        </EquiposEnfrentados>
+        <Marcador>3-1</Marcador>
+        <Anotaciones>
+            <GolJugador>
+                <Nombre>Ryan Sweeney</Nombre>
+                <Minuto>13</Minuto>
+            </GolJugador>
+            <GolJugador>
+                <Nombre>Dipo Akinyemi</Nombre>
+                <Minuto>17</Minuto>
+            </GolJugador>
+            <GolJugador>
+                <Nombre>Alex Jakubiak</Nombre>
+                <Minuto>59</Minuto>
+            </GolJugador>
+            <GolJugador>
+                <Nombre>Luke McCowan</Nombre>
+                <Minuto>80</Minuto>
+            </GolJugador>
+        </Anotaciones>
+    </Partido>
+</LigaBBVA>
+
+
